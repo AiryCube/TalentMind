@@ -73,6 +73,13 @@ async def _process_messages_internal():
             "history": store.get_conversation(m["id"]),
             "agent_config": config_dict
         })
+
+        # ── Quality gate: pipeline returned None = message was rejected ──
+        if text is None:
+            logger.warning(f"Message {m['id']} from {m.get('sender')} was REJECTED by the review pipeline. Skipping send.")
+            results.append({"id": m["id"], "status": "quality_rejected"})
+            continue
+
         ok = await browser.reply(m["conversation_id"], text)
         if ok:
             store.save_message(m["id"], m["sender"], m["text"], text)
