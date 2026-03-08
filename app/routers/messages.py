@@ -16,6 +16,28 @@ store = StoreService(db_url=os.getenv("DATABASE_URL", "sqlite:///./data.db"))
 async def _process_messages_internal():
     """Shared logic for processing messages — used by both the API endpoint and the scheduler."""
     browser = await get_browser_service()
+    
+    # ── Auto-login se não autenticado ───────────────────────────
+    try:
+        logged = await browser.is_logged_in()
+    except Exception:
+        logged = False
+    
+    if not logged:
+        email = os.getenv("LINKEDIN_EMAIL")
+        password = os.getenv("LINKEDIN_PASSWORD")
+        if email and password:
+            logger.info("Sessão não autenticada — iniciando login automático...")
+            try:
+                await browser.login(email, password)
+                logger.info("Login automático concluído.")
+            except Exception as login_err:
+                logger.error(f"Falha no login automático: {login_err}")
+                return {"processed": [], "error": "Não foi possível autenticar no LinkedIn automaticamente. Faça login manualmente pelo Dashboard."}
+        else:
+            return {"processed": [], "error": "Credenciais do LinkedIn não configuradas no .env."}
+    # ────────────────────────────────────────────────────────────
+    
     messages = await browser.fetch_messages(days_limit=90)
     logger.info(f"MESSAGES EXTRACTED: {len(messages)}")
     results = []
