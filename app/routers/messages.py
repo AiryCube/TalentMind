@@ -13,27 +13,18 @@ router = APIRouter()
 store = StoreService(db_url=os.getenv("DATABASE_URL", "sqlite:///./data.db"))
 
 
-@router.get("/")
-async def list_messages():
-    """Lista todas as mensagens recentes do LinkedIn"""
+async def _process_messages_internal():
+    """Shared logic for processing messages — used by both the API endpoint and the scheduler."""
     browser = await get_browser_service()
-    messages = await browser.fetch_messages()
-    return {"messages": messages}
-
-
-@router.post("/process")
-async def process_messages():
-    """Processa mensagens não respondidas gerando respostas com IA"""
-    browser = await get_browser_service()
-    # Puxa histórico de até 90 dias atrás para abranger mensagens do início de 2026
     messages = await browser.fetch_messages(days_limit=90)
-    print(f"MESSAGES EXTRACTED: {len(messages)}")
+    logger.info(f"MESSAGES EXTRACTED: {len(messages)}")
     results = []
     key = os.getenv("OPENAI_API_KEY")
     if not key:
-        raise HTTPException(status_code=400, detail="OPENAI_API_KEY não configurado.")
+        logger.error("OPENAI_API_KEY not set, skipping agent run.")
+        return {"processed": []}
     rg = ResponseGenerator(api_key=key)
-    
+
     # Carrega configurações salvas no banco
     config_dict = {}
     try:
@@ -41,20 +32,18 @@ async def process_messages():
             config_dict[row[0]] = row[1]
     except Exception:
         pass
-        
+
     for m in messages:
-        # Se já respondemos via agente, pula
         if store.is_already_replied(m["id"]):
             continue
-            
-        # Prioriza mensagens novas ou ainda não respondidas pelo próprio perfil
         if not m.get("is_unreplied", True):
             continue
-            
+
         headline = m.get("sender_headline", "")
-        # Heurística para identificar recrutadores pelo title/headline
-        is_recruiter = any(kw in headline.lower() for kw in ["recrut", "recruit", "rh", "hr", "talent", "headhunter", "acquisition", "aquisition"])
-            
+        is_recruiter = any(kw in headline.lower() for kw in [
+            "recrut", "recruit", "rh", "hr", "talent", "headhunter", "acquisition", "aquisition"
+        ])
+
         text = await rg.generate(m["text"], {
             "sender": m.get("sender"),
             "sender_headline": headline,
@@ -67,6 +56,20 @@ async def process_messages():
             store.save_message(m["id"], m["sender"], m["text"], text)
             results.append({"id": m["id"], "status": "replied"})
     return {"processed": results}
+
+
+@router.get("/")
+async def list_messages():
+    """Lista todas as mensagens recentes do LinkedIn"""
+    browser = await get_browser_service()
+    messages = await browser.fetch_messages()
+    return {"messages": messages}
+
+
+@router.post("/process")
+async def process_messages():
+    """Processa mensagens não respondidas gerando respostas com IA"""
+    return await _process_messages_internal()
 
 
 @router.get("/history")

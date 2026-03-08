@@ -46,6 +46,11 @@
             <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
             <h1 id="page-title">Dashboard</h1>
             <div class="topbar-actions">
+                <div class="live-clock"
+                    style="display:inline-flex; align-items:center; margin-right: 15px; font-weight: 500; color: var(--text-secondary);">
+                    <i class="fas fa-clock" style="margin-right: 6px; color: var(--accent);"></i>
+                    <span id="live-clock-display">--:--:--</span>
+                </div>
                 <button class="btn btn-sm btn-glass" id="btn-refresh" title="Atualizar dados"><i
                         class="fas fa-sync-alt"></i></button>
                 <button class="btn btn-sm btn-primary" id="btn-check-status"><i class="fas fa-plug"></i> Status</button>
@@ -305,6 +310,40 @@
                             <input type="text" id="cfg-target-roles" class="form-control"
                                 placeholder="Ex: Backend Developer, DevOps, Data Engineer, Tech Lead...">
                         </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2><i class="fas fa-clock"></i> Agendador Automático</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group"
+                            style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+                            <label class="switch">
+                                <input type="checkbox" id="cfg-scheduler-active">
+                                <span class="slider round"></span>
+                            </label>
+                            <label style="margin: 0;">Ativar Execução Automática Diária</label>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Horário de Início</label>
+                                <input type="time" id="cfg-scheduler-start" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Intervalo de Repetição</label>
+                                <select id="cfg-scheduler-interval" class="form-control">
+                                    <option value="2">A cada 2 horas</option>
+                                    <option value="4">A cada 4 horas</option>
+                                    <option value="8">A cada 8 horas</option>
+                                    <option value="12">A cada 12 horas</option>
+                                    <option value="24" selected>Uma vez por dia (24h)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <small class="text-muted">Quando ativo, o Agente inicializará no background a leitura do seu
+                            Inbox nestes intervalos.</small>
                     </div>
                 </div>
 

@@ -569,6 +569,15 @@ class BrowserService:
                 
                 sender_name = sender.strip() if sender else 'Desconhecido'
                 
+                # Tratar vazamento de texto no nome do remetente (ex: "19 DE FEV. Ver perfil de Vinicius Vinicius Figueiredo 08:12...")
+                if len(sender_name) > 30 and 'Vinicius Figueiredo' in sender_name:
+                    sender_name = 'Vinicius Figueiredo'
+                elif len(sender_name) > 30:
+                    # Tenta pegar apenas a primeira linha útil ou um pedaço curto
+                    parts = sender_name.split()
+                    if len(parts) > 2:
+                        sender_name = f"{parts[0]} {parts[1]}"
+                
                 # Consideramos nova/não respondida se o remetente da última msg não for o usuário
                 is_unreplied = (
                     sender_name != my_name and 

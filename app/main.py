@@ -1,6 +1,7 @@
 import os
 import asyncio
 import logging
+from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
@@ -21,11 +22,27 @@ if os.name == "nt":
 load_dotenv(dotenv_path=Path(__file__).resolve().parents[1] / ".env")
 
 from .routers import linkedin, ai, calendar, messages, config  # noqa: E402
+from .services.scheduler import scheduler_loop  # noqa: E402
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """FastAPI lifespan: starts background scheduler on startup."""
+    task = asyncio.create_task(scheduler_loop())
+    logging.getLogger("main").info("⏰ Background scheduler started.")
+    yield
+    task.cancel()
+    try:
+        await task
+    except asyncio.CancelledError:
+        pass
+
 
 app = FastAPI(
     title="LinkedIn Recruiter Agent",
     description="Agente de IA para interação automática com recrutadores no LinkedIn",
     version="2.0.0",
+    lifespan=lifespan,
 )
 
 app.add_middleware(

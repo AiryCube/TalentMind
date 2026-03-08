@@ -59,6 +59,17 @@ if (menuToggle) {
     menuToggle.addEventListener('click', () => sidebar.classList.toggle('open'));
 }
 
+// ─── Live Clock ───────────────────────────────────────────────
+function updateClock() {
+    const clockEl = $('#live-clock-display');
+    if (clockEl) {
+        const now = new Date();
+        clockEl.textContent = now.toLocaleTimeString('pt-BR');
+    }
+}
+setInterval(updateClock, 1000);
+updateClock();
+
 // ─── Toast Notifications ──────────────────────────────────────
 function showToast(message, type = 'info') {
     const container = $('#toast-container');
@@ -323,6 +334,8 @@ const configFields = [
     { id: 'cfg-availability', key: 'availability' },
     { id: 'cfg-availability-notes', key: 'availability_notes' },
     { id: 'cfg-system-prompt', key: 'system_prompt' },
+    { id: 'cfg-scheduler-start', key: 'scheduler_start' },
+    { id: 'cfg-scheduler-interval', key: 'scheduler_interval' },
 ];
 
 // Checkbox group fields (stored as comma-separated values)
@@ -353,16 +366,22 @@ async function loadConfig() {
         const data = await api('/config/all');
         const cfg = data.config || {};
 
-        // Text fields
+        // Text/select fields
         configFields.forEach(({ id, key }) => {
             const el = $(`#${id}`);
-            if (el && cfg[key]) el.value = cfg[key];
+            if (el && cfg[key] !== undefined) el.value = cfg[key];
         });
 
         // Checkbox groups
         checkboxGroupFields.forEach(({ groupId, key }) => {
             if (cfg[key]) setCheckboxValues(groupId, cfg[key]);
         });
+
+        // Scheduler toggle
+        const schedulerToggle = $('#cfg-scheduler-active');
+        if (schedulerToggle) {
+            schedulerToggle.checked = cfg['scheduler_active'] === 'true' || cfg['scheduler_active'] === true;
+        }
 
         // Resume status
         try {
@@ -398,6 +417,12 @@ if (btnSaveConfig) {
             const val = getCheckboxValues(groupId);
             if (val) updates.push({ key, value: val });
         });
+
+        // Scheduler toggle
+        const schedulerToggle = $('#cfg-scheduler-active');
+        if (schedulerToggle) {
+            updates.push({ key: 'scheduler_active', value: schedulerToggle.checked ? 'true' : 'false' });
+        }
 
         try {
             await api('/config/save-batch', {

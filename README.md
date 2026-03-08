@@ -13,6 +13,8 @@ Um agente autônomo baseado em Inteligência Artificial desenvolvido para gerenc
   - Responde **sempre no mesmo idioma** da mensagem original.
   - Atua de duas maneiras distintas: Se for **Recrutamento**, fornecerá contatos e link para agenda. Se for **Networking**, apenas interagirá gentilmente.
   - Sem alucinação (Zero-Hallucination): Só usa a verdade se alimentada no perfil e currículo.
+- **Agendador Automático (Cron):** Configure pela tela de Configurações o horário de início e o intervalo (2h, 4h, 8h, 12h ou 24h) para que o agente rode sozinho. O backend usa um `asyncio.create_task` em background que verifica as configurações salvas a cada 60 segundos e dispara automaticamente.
+- **Relógio ao Vivo no Dashboard:** Data e hora atual exibidas em tempo real na barra superior da interface.
 - **Dashboard UI Premium Web:**
   - Painel com Tema Dinâmico.
   - Visualizador do "Log de Interações".
@@ -40,7 +42,8 @@ O projeto adota uma arquitetura modularizada focada no **Backend Python (FastAPI
 │   │   └── profile.py      # Extração (Draft) do perfil do Linkedin via DOM
 │   └── services/
 │       ├── browser.py      # Core de Automação Playwright (DOM Inspect, Clicks, Send Keys, Send Resume)
-│       └── openai.py       # Integração com GPT, extração do Prompt Padrão e injeção do Currículo
+│       ├── openai.py       # Integração com GPT, extração do Prompt Padrão e injeção do Currículo
+│       └── scheduler.py    # Loop asyncio em background: verifica config e dispara o agente automaticamente
 ├── data/
 │   └── data.db             # Banco de Dados Local (SQLite)
 ├── public/                 # Assets Servidos Específicos para o Frontend (Dashboard)
