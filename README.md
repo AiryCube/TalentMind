@@ -15,6 +15,11 @@ Um agente autônomo baseado em Inteligência Artificial desenvolvido para gerenc
   - Sem alucinação (Zero-Hallucination): Só usa a verdade se alimentada no perfil e currículo.
 - **Agendador Automático (Cron):** Configure pela tela de Configurações o horário de início e o intervalo (2h, 4h, 8h, 12h ou 24h) para que o agente rode sozinho. O backend usa um `asyncio.create_task` em background que verifica as configurações salvas a cada 60 segundos e dispara automaticamente.
 - **Relógio ao Vivo no Dashboard:** Data e hora atual exibidas em tempo real na barra superior da interface.
+- **Pipeline Multi-Agente de Qualidade (4 Agentes):** Antes de enviar qualquer resposta, o texto passa por um pipeline de 4 agentes espécializados:
+  - **Classifier** — Detecta idioma, intenção, se o remetente é recrutador, se pediu CV, e se há um link de formulário (temp=0, JSON estruturado).
+  - **Generator** — Gera rascunho com regras absolutas invioláveis (sem placeholders, sem erro de idioma, sem LinkedIn como canal) + substituição correta de variáveis no prompt customizado.
+  - **Reviewer** — Valida 6 critérios com regex + LLM juiz de idioma. Reprovado = vai para Corrector.
+  - **Corrector** — Corrige issues específicos em até 2 tentativas. Se não resolver, descarta a mensagem em vez de enviar conteúdo ruim.
 - **Dashboard UI Premium Web:**
   - Painel com Tema Dinâmico.
   - Visualizador do "Log de Interações".
