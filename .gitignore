@@ -1,0 +1,39 @@
+# Dependencies
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment
+.env
+
+# Database
+*.db
+
+# Logs & Debugging
+logs/
+*.log
+debug_*.html
+debug_*.png
+test_*.py
+inspect_*.py
+dump_*.py
+find_*.py
+parse_*.py
+check_*.py
+estrutura*.json
+
+# IDE
+.vscode/
+.idea/
+
+# Browser profile
+.browser_profile/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Node (legacy - should not exist anymore)
+node_modules/
+package-lock.json

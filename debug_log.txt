@@ -1,0 +1,1304 @@
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+    self.playwright = await async_playwright().start()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG: Erro em ensure_initialized: 
+DEBUG: Traceback completo: Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\vinic\projeto\linkedin\app\services\browser.py", line 66, in ensure_initialized
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 51, in start
+    return await self.__aenter__()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\async_api\_context_manager.py", line 46, in __aenter__
+    playwright = AsyncPlaywright(next(iter(done)).result())
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\projeto\linkedin\.venv\Lib\site-packages\playwright\_impl\_transport.py", line 120, in connect
+    self._proc = await asyncio.create_subprocess_exec(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\subprocess.py", line 223, in create_subprocess_exec
+    transport, protocol = await loop.subprocess_exec(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 1708, in subprocess_exec
+    transport = await self._make_subprocess_transport(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\vinic\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 503, in _make_subprocess_transport
+    raise NotImplementedError
+NotImplementedError
+
+DEBUG LOOP TYPE: <class 'asyncio.windows_events.ProactorEventLoop'>
+DEBUG LOOP TYPE: <class 'asyncio.windows_events.ProactorEventLoop'>
+DEBUG LOOP TYPE: <class 'asyncio.windows_events.ProactorEventLoop'>
+DEBUG LOOP TYPE: <class 'asyncio.windows_events.ProactorEventLoop'>
+DEBUG LOOP TYPE: <class 'asyncio.windows_events.ProactorEventLoop'>
+DEBUG LOOP TYPE: <class 'asyncio.windows_events.ProactorEventLoop'>
+DEBUG LOOP TYPE: <class 'asyncio.windows_events.ProactorEventLoop'>
+DEBUG LOOP TYPE: <class 'asyncio.windows_events.ProactorEventLoop'>
+DEBUG LOOP TYPE: <class 'asyncio.windows_events.ProactorEventLoop'>
+DEBUG LOOP TYPE: <class 'asyncio.windows_events.ProactorEventLoop'>
+DEBUG LOOP TYPE: <class 'asyncio.windows_events.ProactorEventLoop'>
+DEBUG LOOP TYPE: <class 'asyncio.windows_events.ProactorEventLoop'>
+DEBUG LOOP TYPE: <class 'asyncio.windows_events.ProactorEventLoop'>
+DEBUG LOOP TYPE: <class 'asyncio.windows_events.ProactorEventLoop'>

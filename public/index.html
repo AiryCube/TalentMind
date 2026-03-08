@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Recruiter Agent — Dashboard</title>
+    <meta name="description" content="Dashboard de gestão do agente de IA para interação com recrutadores no LinkedIn">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fab fa-linkedin"></i>
+                <span>Recruiter Agent</span>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="nav-link active" data-section="dashboard" id="nav-dashboard"><i
+                        class="fas fa-chart-line"></i><span>Dashboard</span></a></li>
+            <li><a href="#" class="nav-link" data-section="interactions" id="nav-interactions"><i
+                        class="fas fa-comments"></i><span>Interações</span></a></li>
+            <li><a href="#" class="nav-link" data-section="alerts" id="nav-alerts"><i
+                        class="fas fa-bell"></i><span>Alertas</span><span class="badge" id="alert-badge"
+                        style="display:none">0</span></a></li>
+            <li><a href="#" class="nav-link" data-section="config" id="nav-config"><i
+                        class="fas fa-cog"></i><span>Configurações</span></a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <div class="agent-status" id="agent-status-indicator">
+                <span class="status-dot offline"></span>
+                <span>Agente Offline</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Top Bar -->
+        <header class="topbar">
+            <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+            <h1 id="page-title">Dashboard</h1>
+            <div class="topbar-actions">
+                <button class="btn btn-sm btn-glass" id="btn-refresh" title="Atualizar dados"><i
+                        class="fas fa-sync-alt"></i></button>
+                <button class="btn btn-sm btn-primary" id="btn-check-status"><i class="fas fa-plug"></i> Status</button>
+                <button class="btn btn-sm btn-success" id="btn-run-agent"
+                    style="background-color: var(--success-color); color: white;"><i class="fas fa-robot"></i> Rodar
+                    Agente (2026)</button>
+            </div>
+        </header>
+
+        <!-- ═══ Dashboard Section ═══ -->
+        <section class="content-section active" id="section-dashboard">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-envelope-open-text"></i></div>
+                    <div class="stat-info">
+                        <span class="stat-value" id="stat-total-messages">—</span>
+                        <span class="stat-label">Mensagens Processadas</span>
+                    </div>
+                </div>
+                <div class="stat-card accent">
+                    <div class="stat-icon"><i class="fas fa-reply"></i></div>
+                    <div class="stat-info">
+                        <span class="stat-value" id="stat-replies">—</span>
+                        <span class="stat-label">Respostas Enviadas</span>
+                    </div>
+                </div>
+                <div class="stat-card success">
+                    <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+                    <div class="stat-info">
+                        <span class="stat-value" id="stat-interviews">—</span>
+                        <span class="stat-label">Entrevistas Agendadas</span>
+                    </div>
+                </div>
+                <div class="stat-card warning">
+                    <div class="stat-icon"><i class="fas fa-bell"></i></div>
+                    <div class="stat-info">
+                        <span class="stat-value" id="stat-alerts">—</span>
+                        <span class="stat-label">Alertas Ativos</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2><i class="fas fa-clock-rotate-left"></i> Interações Recentes</h2>
+                    <a href="#" class="link-btn" id="link-see-all-interactions">Ver todas <i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="card-body" id="recent-interactions">
+                    <div class="empty-state"><i class="fas fa-inbox"></i>
+                        <p>Nenhuma interação registrada ainda</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2><i class="fas fa-bell"></i> Próximos Eventos</h2>
+                </div>
+                <div class="card-body" id="upcoming-events">
+                    <div class="empty-state"><i class="fas fa-calendar-xmark"></i>
+                        <p>Nenhum evento agendado</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ Interactions Section ═══ -->
+        <section class="content-section" id="section-interactions">
+            <div class="card">
+                <div class="card-header">
+                    <h2><i class="fas fa-comments"></i> Log de Interações</h2>
+                    <div class="header-actions">
+                        <input type="text" class="input-search" placeholder="Buscar por recrutador..."
+                            id="search-interactions">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="interaction-list" id="interaction-list">
+                        <div class="empty-state"><i class="fas fa-inbox"></i>
+                            <p>Carregando interações...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ Alerts Section ═══ -->
+        <section class="content-section" id="section-alerts">
+            <div class="card">
+                <div class="card-header">
+                    <h2><i class="fas fa-bell"></i> Alertas & Entrevistas</h2>
+                    <button class="btn btn-sm btn-primary" id="btn-new-alert"><i class="fas fa-plus"></i> Novo
+                        Alerta</button>
+                </div>
+                <div class="card-body" id="alerts-list">
+                    <div class="empty-state"><i class="fas fa-check-circle"></i>
+                        <p>Nenhum alerta ativo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Alert Modal -->
+            <div class="modal-overlay" id="modal-new-alert" style="display:none">
+                <div class="modal">
+                    <div class="modal-header">
+                        <h3>Novo Alerta</h3>
+                        <button class="btn-close" id="btn-close-modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Tipo</label>
+                            <select id="alert-type" class="form-control">
+                                <option value="interview">🎯 Entrevista</option>
+                                <option value="followup">📩 Follow-up</option>
+                                <option value="reminder">⏰ Lembrete</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Título</label>
+                            <input type="text" id="alert-title" class="form-control"
+                                placeholder="Ex: Entrevista com Google">
+                        </div>
+                        <div class="form-group">
+                            <label>Descrição</label>
+                            <textarea id="alert-description" class="form-control" rows="3"
+                                placeholder="Detalhes e pontos importantes..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Data/Hora</label>
+                            <input type="datetime-local" id="alert-datetime" class="form-control">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-glass" id="btn-cancel-alert">Cancelar</button>
+                        <button class="btn btn-primary" id="btn-save-alert">Salvar Alerta</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ Config Section ═══ -->
+        <section class="content-section" id="section-config">
+            <div class="config-grid">
+                <div class="card card-full-width">
+                    <div class="card-header">
+                        <h2><i class="fas fa-user"></i> Perfil Profissional</h2>
+                        <button class="btn btn-sm btn-primary" id="btn-autofill-profile"><i class="fas fa-magic"></i>
+                            Preencher do LinkedIn</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group" id="autofill-status-container" style="display:none">
+                            <div class="autofill-banner" id="autofill-banner">
+                                <i class="fas fa-spinner fa-spin"></i> Buscando dados do seu perfil LinkedIn...
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Resumo do Perfil</label>
+                            <textarea id="cfg-profile-summary" class="form-control" rows="5"
+                                placeholder="Descreva brevemente seu perfil profissional... Clique em 'Preencher do LinkedIn' para preencher automaticamente."></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Habilidades Principais</label>
+                                <input type="text" id="cfg-skills" class="form-control"
+                                    placeholder="Python, JavaScript, Cloud, etc.">
+                            </div>
+                            <div class="form-group">
+                                <label>Nível / Senioridade</label>
+                                <input type="text" id="cfg-seniority" class="form-control"
+                                    placeholder="Ex: Sênior, Tech Lead, Pleno, Gerente, etc.">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2><i class="fas fa-address-book"></i> Contatos</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label>E-mail</label>
+                            <input type="email" id="cfg-contact-email" class="form-control"
+                                placeholder="seu-email@exemplo.com">
+                        </div>
+                        <div class="form-group">
+                            <label>WhatsApp</label>
+                            <input type="text" id="cfg-contact-whatsapp" class="form-control" placeholder="11999999999">
+                        </div>
+                        <div class="form-group">
+                            <label>Telefone</label>
+                            <input type="text" id="cfg-contact-phone" class="form-control" placeholder="11999999999">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2><i class="fas fa-dollar-sign"></i> Pretensão Salarial</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label>Pretensão (descrição livre)</label>
+                            <textarea id="cfg-salary-expectation" class="form-control" rows="3"
+                                placeholder="Ex: Para posições Senior, entre R$18.000 e R$25.000 CLT. Para PJ, a partir de R$150/hora."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2><i class="fas fa-briefcase"></i> Vagas que Procuro</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label>Modelo de Trabalho (marque todos que aceita)</label>
+                            <div class="checkbox-grid" id="cfg-work-model-group">
+                                <label class="checkbox-item"><input type="checkbox" value="remote"> <span>🏠 100%
+                                        Remoto</span></label>
+                                <label class="checkbox-item"><input type="checkbox" value="hybrid"> <span>🏢
+                                        Híbrido</span></label>
+                                <label class="checkbox-item"><input type="checkbox" value="onsite"> <span>📍
+                                        Presencial</span></label>
+                                <label class="checkbox-item"><input type="checkbox" value="international"> <span>🌍
+                                        Internacional</span></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Tipo de Empresa (marque todos que aceita)</label>
+                            <div class="checkbox-grid" id="cfg-company-type-group">
+                                <label class="checkbox-item"><input type="checkbox" value="startup"> <span>🚀
+                                        Startup</span></label>
+                                <label class="checkbox-item"><input type="checkbox" value="corporate"> <span>🏛️
+                                        Corporação / Grande Empresa</span></label>
+                                <label class="checkbox-item"><input type="checkbox" value="consulting"> <span>💼
+                                        Consultoria</span></label>
+                                <label class="checkbox-item"><input type="checkbox" value="agency"> <span>🎨 Agência /
+                                        Software House</span></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Regime de Contratação (marque todos que aceita)</label>
+                            <div class="checkbox-grid" id="cfg-contract-type-group">
+                                <label class="checkbox-item"><input type="checkbox" value="clt"> <span>📋
+                                        CLT</span></label>
+                                <label class="checkbox-item"><input type="checkbox" value="pj"> <span>📄
+                                        PJ</span></label>
+                                <label class="checkbox-item"><input type="checkbox" value="freelance"> <span>💻
+                                        Freelance</span></label>
+                                <label class="checkbox-item"><input type="checkbox" value="contractor"> <span>🌐
+                                        Contractor (Internacional)</span></label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Áreas / Cargos de Interesse</label>
+                            <input type="text" id="cfg-target-roles" class="form-control"
+                                placeholder="Ex: Backend Developer, DevOps, Data Engineer, Tech Lead...">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2><i class="fas fa-calendar-alt"></i> Disponibilidade de Agenda</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label>Horários Disponíveis</label>
+                            <textarea id="cfg-availability" class="form-control" rows="3"
+                                placeholder="Ex: Segunda a Sexta, 9h-18h. Evitar terças à tarde."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Observações</label>
+                            <input type="text" id="cfg-availability-notes" class="form-control"
+                                placeholder="Ex: Preferência por calls de manhã">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-full-width">
+                    <div class="card-header">
+                        <h2><i class="fas fa-brain"></i> Cérebro da IA (Prompt Base)</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label>Comportamento do Agente (Opcional - sobrescreve o padrão)</label>
+                            <textarea id="cfg-system-prompt" class="form-control" rows="8"
+                                placeholder="Deixe em branco para usar a inteligência imbutida de alta conversão, ou digite suas regras personalizadas para a IA..."></textarea>
+                            <small class="text-muted">A IA já é treinada para não inventar dados e seguir seu perfil à
+                                risca. Edite apenas se quiser mudar o tom ou adicionar restrições específicas.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-full-width">
+                    <div class="card-header">
+                        <h2><i class="fas fa-file-pdf"></i> Currículo (Para envio no Chat)</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-row" style="align-items: center;">
+                            <div class="form-group" style="flex: 1;">
+                                <label>Upload de Arquivo (PDF/DOCX)</label>
+                                <input type="file" id="resume-upload" class="form-control" accept=".pdf,.doc,.docx">
+                            </div>
+                            <div class="form-group" style="margin-top: 1.5rem;">
+                                <button class="btn btn-primary" id="btn-upload-resume"><i class="fas fa-upload"></i>
+                                    Enviar</button>
+                            </div>
+                        </div>
+                        <div id="resume-status" class="alert-info"
+                            style="display:none; margin-top: 10px; padding: 10px; border-radius: 6px; background: rgba(59,130,246,0.1); color: var(--primary-color);">
+                            <i class="fas fa-check-circle"></i> Currículo atual salvo: <strong
+                                id="resume-ext-label"></strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="config-actions">
+                <button class="btn btn-primary btn-lg" id="btn-save-config"><i class="fas fa-save"></i> Salvar
+                    Configurações</button>
+                <span class="save-status" id="save-status"></span>
+            </div>
+        </section>
+    </main>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
