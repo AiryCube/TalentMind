@@ -21,7 +21,8 @@ CLASSIFIER_PROMPT = """You are a message classification engine. Analyze the Link
   "asks_for_cv": <true|false>,
   "asks_for_schedule": <true|false>,
   "asks_for_contacts": <true|false>,
-  "is_recruiter": <true|false>
+  "is_recruiter": <true|false>,
+  "has_form_link": <true|false>
 }
 
 Rules:
@@ -30,6 +31,7 @@ Rules:
 - asks_for_cv = true if they mention resume, CV, currículo, portfolio.
 - asks_for_schedule = true if they mention call, meeting, reunião, agenda, horário, disponibilidade.
 - asks_for_contacts = true if they ask for email, phone, WhatsApp, contato.
+- has_form_link = true if the message contains a URL (http/https link) that leads to a form, application page, or where the candidate should submit their profile/resume. This is different from a simple link — it must be a form/application link where the candidate should submit something.
 - Return ONLY valid JSON, no markdown, no explanation.
 """
 
@@ -65,4 +67,5 @@ class ClassifierAgent:
                 "asks_for_schedule": False,
                 "asks_for_contacts": False,
                 "is_recruiter": False,
+                "has_form_link": False,
             }

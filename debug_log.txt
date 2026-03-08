@@ -1307,3 +1307,6 @@ DEBUG LOOP TYPE: <class 'asyncio.windows_events.ProactorEventLoop'>
 DEBUG LOOP TYPE: <class 'asyncio.windows_events.ProactorEventLoop'>
 DEBUG LOOP TYPE: <class 'asyncio.windows_events.ProactorEventLoop'>
 DEBUG LOOP TYPE: <class 'asyncio.windows_events.ProactorEventLoop'>
+DEBUG LOOP TYPE: <class 'asyncio.windows_events.ProactorEventLoop'>
+DEBUG LOOP TYPE: <class 'asyncio.windows_events.ProactorEventLoop'>
+DEBUG LOOP TYPE: <class 'asyncio.windows_events.ProactorEventLoop'>

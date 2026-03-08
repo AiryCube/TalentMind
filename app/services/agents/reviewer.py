@@ -16,10 +16,18 @@ logger = logging.getLogger("agents.reviewer")
 
 # --- Regex-based checks (fast, no API call) ---
 
-# Placeholders that must never appear
+# Placeholders that must never appear (broad pattern covers all variants)
 PLACEHOLDER_PATTERNS = [
-    r"\[seu nome\]", r"\[your name\]", r"\[name\]", r"\[nome\]",
-    r"\[contact\]", r"\[contato\]", r"\[insert\]"
+    r"\[seu\s+\w+\]",        # [SEU EMAIL], [SEU NOME], [SEU WHATSAPP], etc.
+    r"\[your\s+\w+\]",       # [YOUR NAME], [YOUR EMAIL], etc.
+    r"\[my\s+\w+\]",         # [MY EMAIL], [MY PHONE], etc.
+    r"\[name\]",
+    r"\[nome\]",
+    r"\[contact\]",
+    r"\[contato\]",
+    r"\[insert\]",
+    r"\[fill\]",
+    r"\[preencher\]",
 ]
 
 # Social networks that should never be suggested as a contact channel
@@ -111,6 +119,13 @@ class ReviewerAgent:
         """
         issues = self._regex_check(draft, original_message, classification)
 
+        # LLM-based language check (more reliable than keyword heuristics)
+        expected_lang = classification.get("language", "")
+        if expected_lang:
+            lang_issue = await self._llm_language_check(draft, expected_lang)
+            if lang_issue:
+                issues.append(lang_issue)
+
         if issues:
             logger.warning(f"Reviewer found {len(issues)} issue(s): {issues}")
             return {"approved": False, "issues": issues}
@@ -118,3 +133,26 @@ class ReviewerAgent:
         # All checks passed
         logger.info("Reviewer approved the draft.")
         return {"approved": True, "issues": []}
+
+    async def _llm_language_check(self, draft: str, expected_lang: str) -> str | None:
+        """Uses the LLM to definitively check if the draft is in the correct language."""
+        try:
+            prompt = (
+                f"Is the following text written in '{expected_lang}' language? "
+                f"Answer with only 'yes' or 'no'.\n\nTEXT:\n{draft}"
+            )
+            response = await self.client.chat.completions.create(
+                model=os.getenv("OPENAI_MODEL", "gpt-4o-mini"),
+                messages=[{"role": "user", "content": prompt}],
+                temperature=0,
+                max_tokens=5,
+            )
+            answer = response.choices[0].message.content.strip().lower()
+            if answer.startswith("no"):
+                return (
+                    f"WRONG_LANGUAGE: The original message is in '{expected_lang}' but the draft "
+                    f"is written in a different language. Rewrite entirely in '{expected_lang}'."
+                )
+        except Exception as e:
+            logger.warning(f"LLM language check failed: {e}")
+        return None
